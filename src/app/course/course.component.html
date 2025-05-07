@@ -1,0 +1,69 @@
+<div class="container">
+  <div class="row">
+      <div class="col-8 m-auto">
+          <h1 class="text-center">Cadastro de Cursos</h1>
+          <form [formGroup]="formGroupCourse">
+          <label for="inputName" class="form-label">Nome do curso:</label>
+          <input formControlName="name" type="text" class="form-control" id="inputName">
+
+        <div class="mb-3">
+          <label for="inputLevel" class="form-label">Nível do curso:</label>
+          <select formControlName="level" class="form-select" id="inputLevel">
+            <option value="">Selecione...</option>
+            <option value="Básico">Básico</option>
+            <option value="Intermediário">Intermediário</option>
+            <option value="Avançado">Avançado</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="inputDuration" class="form-label">Duração (em horas):</label>
+          <input formControlName="duration" type="number" class="form-control" id="inputDuration">
+        </div>
+
+        <div class="mb-3">
+          <label for="inputModality" class="form-label">Modalidade:</label>
+          <select formControlName="modality" class="form-select" id="inputModality">
+            <option value="">Selecione...</option>
+            <option value="Online">Online</option>
+            <option value="Presencial">Presencial</option>
+            <option value="Hibrido">Hibrido</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary" (click)="save()">Salvar</button>
+      </form>
+
+      <h2 class="text-center mt-5">Cursos Cadastrados</h2>
+
+      <div style="overflow-y: auto; max-height: 400px;">
+        <table class="table table-striped mt-3">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Nome</th>
+              <th>Nível</th>
+              <th>Duração</th>
+              <th>Modalidade</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let c of courses">
+              <td>{{ c.id }}</td>
+              <td>{{ c.name }}</td>
+              <td>{{ c.level }}</td>
+              <td>{{ c.duration }}h</td>
+              <td>{{ c.modality }}</td>
+              <td>
+                <button class="btn btn-warning btn-sm me-2" (click)="edit(c)">Editar</button>
+                <button class="btn btn-danger btn-sm" (click)="delete(c)">Remover</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</div>
