@@ -32,3 +32,6 @@ git clone https://github.com/BrunoBrasilJr/cadatrar-cursos.git
 cd cadatrar-cursos
 npm install
 npm start
+```
+
+Acesse: http://localhost:4200
