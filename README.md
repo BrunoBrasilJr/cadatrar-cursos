@@ -1,27 +1,29 @@
-# Cadastrar Cursos (Acadêmico) 📚
+# Cadastrar Cursos 📚
 
-Aplicação acadêmica em **Angular** para cadastro e gerenciamento de cursos, com foco em praticar
-**CRUD**, organização de código e fluxo básico de telas.
+Projeto acadêmico desenvolvido em **Angular**, com foco em praticar operações de **CRUD**,
+organização básica de código e fluxo de telas em uma aplicação front-end.
 
 ---
 
 ## 🎯 Objetivo do Projeto
-Treinar fundamentos de front-end com Angular em um cenário simples e realista:
-criação, leitura, edição e remoção de registros.
+Aplicar conceitos fundamentais de desenvolvimento front-end com Angular em um cenário simples e didático,
+envolvendo cadastro, listagem, edição e remoção de dados.
 
 ---
 
 ## 🛠 Tecnologias
-- Angular (Angular CLI)
+- Angular
 - TypeScript
-- HTML / CSS
+- HTML
+- CSS
 
 ---
 
 ## ✨ Funcionalidades
-- CRUD de cursos (cadastro, listagem, edição e remoção)
-- Estrutura simples e direta (ideal para estudo)
-- Organização inicial do projeto com Angular CLI
+- Cadastro de cursos
+- Listagem de registros
+- Edição e remoção de cursos
+- Estrutura básica de projeto Angular
 
 ---
 
@@ -31,7 +33,8 @@ criação, leitura, edição e remoção de registros.
 git clone https://github.com/BrunoBrasilJr/cadatrar-cursos.git
 cd cadatrar-cursos
 npm install
-npm start
 ```
+Após instalar as dependências, execute o projeto utilizando o comando configurado no ambiente
+(geralmente ng serve ou npm start).
 
-Acesse: http://localhost:4200
+A aplicação costuma rodar em: http://localhost:4200
